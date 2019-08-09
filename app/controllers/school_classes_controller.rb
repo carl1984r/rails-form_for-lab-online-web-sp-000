@@ -1,6 +1,10 @@
 class SchoolClassesController < ApplicationController
 
 
+  def show
+		@sc = SchoolClass.find(params[:id])
+	end
+
   def new
     @sc = SchoolClass.new
   end
