@@ -5,6 +5,10 @@ class SchoolClassesController < ApplicationController
 		@sc = SchoolClass.find(params[:id])
 	end
 
+  def edit
+	  @sc = SchoolClass.find(params[:id])
+	end
+
   def new
     @sc = SchoolClass.new
   end
