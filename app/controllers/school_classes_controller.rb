@@ -2,7 +2,7 @@ class SchoolClassesController < ApplicationController
 
 
   def new
-
+    @sc = SchoolClass.new
   end
 
   def create
